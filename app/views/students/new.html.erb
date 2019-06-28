@@ -1,0 +1,14 @@
+<h1>Create a New Student</h1>
+<br>
+<br>
+
+<%= form_for Student.new do |f| %>
+  First name: <%= f.text_field :first_name %><br />
+  Last name : <%= f.text_field :last_name %><br />
+  <br>
+  <%= f.submit %>
+<% end %>
+<br>
+<br>
+<a href="/students">See All Students</a> 
+
