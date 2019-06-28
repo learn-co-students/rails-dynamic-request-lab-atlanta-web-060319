@@ -1,5 +1,10 @@
 <div>
+<h1>All Students</h1>
+<br>
   <% @students.each do |student| %>
-    <div><%= student.first_name + " " + student.last_name %></div>
+    <div><li><%= student.first_name + " " + student.last_name %></div></li><br>
   <% end %>
 </div>
+<br>
+<br>
+<a href="/students/new">Create a New Student</a> 
